@@ -1,15 +1,10 @@
-class PersonImpl  {
-  // Method to compare two objects
-  def isCompare():Boolean={
-    val p1 = new Person("Test", 24)
-    val p2 = new Person("Test", 25)
-    if((p1.compare(p2) == 1))
-       true
-    else
-     false
-  }
-}
+//object class
 object main extends App {
-  val personImpl = new PersonImpl()
-  println(personImpl.isCompare())
+  val personOne = new Person("Test", 24)
+  val personTwo = new Person("Test", 25)
+  val personThree = new Person("TestAgain", 24)
+  val personFour = new Person("Test", 25)
+  println(personOne < personTwo)
+  println(personThree < personFour)
+
 }
